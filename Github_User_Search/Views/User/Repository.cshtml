@@ -1,0 +1,6 @@
+﻿@model IEnumerable<Github_User_Search.Business.Business_Model.RepositoryVM>
+
+@foreach (var item in Model)
+{
+    <span><a href="@item.URL" target="_blank">@item.Name</a></span>
+}

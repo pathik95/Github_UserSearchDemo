@@ -1,0 +1,88 @@
+﻿@using Github_User_Search.Business.Business_Model
+@model ResponseVM<SearchUserResponseVM>
+
+@{
+    ViewBag.Title = "Search Result";
+}
+<div class="row">
+    <div class="col-sm-6">
+        <h4>Search Result</h4>
+    </div>
+    <div class="col-sm-6 text-right new-search-link">
+        @Html.ActionLink("New Search", "Index")
+    </div>
+</div>
+@if (Model.Error)
+{
+    <div class="result-warning-container">
+        <div class="alert alert-danger">
+            @Model.Message
+        </div>
+
+    </div>
+}
+
+
+else if (Model.Data.UserList.Count == 0)
+{
+    <div class="result-warning-container">
+        <div class="alert alert-warning">
+            <strong>No Users Found!</strong> Please Click @Html.ActionLink("here", "Index") to search again.
+        </div>
+
+    </div>
+}
+else
+{
+    foreach (var item in Model.Data.UserList)
+    {
+
+        <div class="row">
+            <div class="user-container">
+                <div class="left-section">
+                    <img src="@item.ImageURL" class="img-circle" alt="Cinque Terre" width="70" height="70">
+                </div>
+                <div class="right-section">
+                    <div class="title-text">@item.Login</div>
+                    <div>@item.Location</div>
+                    <div class="repo-container">
+                        @*@{Html.RenderAction("GetTopRatedRepository", new { login = item.Login });}*@
+                        @Html.Partial("Repository", item.RepositoryList)
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+
+    <ul class="pagination">
+        @if (Model.Data.CurrentPage > 1)
+        {
+            <li>
+                <a href="~/User/SearchResult?searchString=@Model.Data.SearchString">First</a>
+            </li>
+            <li>
+                <a href="~/User/SearchResult?searchString=@Model.Data.SearchString&page=@(Model.Data.CurrentPage - 1)">Previous</a>
+            </li>
+        }
+
+        @for (var page = 1; page <= Model.Data.TotalPageCount; page++)
+        {
+            <li class="@(page == Model.Data.CurrentPage ? "active" : "")">
+                <a href="~/User/SearchResult?searchString=@Model.Data.SearchString&page=@page">@page</a>
+            </li>
+        }
+
+        @if (Model.Data.CurrentPage < Model.Data.TotalPageCount)
+        {
+            <li>
+                <a href="~/User/SearchResult?searchString=@Model.Data.SearchString&page=@(Model.Data.CurrentPage + 1)">Next</a>
+            </li>
+            <li>
+                <a href="~/User/SearchResult?searchString=@Model.Data.SearchString&page=@(Model.Data.TotalPageCount)">Last</a>
+            </li>
+        }
+    </ul>
+}
+
+

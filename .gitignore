@@ -1,0 +1,14 @@
+# compiled output
+/dist
+/tmp
+/out-tsc
+
+# dependencies
+/node_modules
+
+/.vs
+
+AppSettingsSecrets.config
+
+.DS_Store
+Thumbs.db

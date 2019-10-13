@@ -1,0 +1,12 @@
+C:\Users\Pathik\source\repos\Github_User_Search\Github_User_Search.Business\bin\Debug\Github_User_Search.Business.dll
+C:\Users\Pathik\source\repos\Github_User_Search\Github_User_Search.Business\bin\Debug\Github_User_Search.Business.pdb
+C:\Users\Pathik\source\repos\Github_User_Search\Github_User_Search.Business\bin\Debug\Github_User_Search.Utility.dll
+C:\Users\Pathik\source\repos\Github_User_Search\Github_User_Search.Business\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Pathik\source\repos\Github_User_Search\Github_User_Search.Business\bin\Debug\Github_User_Search.Utility.pdb
+C:\Users\Pathik\source\repos\Github_User_Search\Github_User_Search.Business\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Pathik\source\repos\Github_User_Search\Github_User_Search.Business\obj\Debug\Github_User_Search.Business.csprojResolveAssemblyReference.cache
+C:\Users\Pathik\source\repos\Github_User_Search\Github_User_Search.Business\obj\Debug\Github_User_Search.Business.csproj.CoreCompileInputs.cache
+C:\Users\Pathik\source\repos\Github_User_Search\Github_User_Search.Business\obj\Debug\Github_User_Search.Business.dll
+C:\Users\Pathik\source\repos\Github_User_Search\Github_User_Search.Business\obj\Debug\Github_User_Search.Business.pdb
+C:\Users\Pathik\source\repos\Github_User_Search\Github_User_Search.Business\bin\Debug\Octokit.dll
+C:\Users\Pathik\source\repos\Github_User_Search\Github_User_Search.Business\bin\Debug\Octokit.xml

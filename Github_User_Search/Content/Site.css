@@ -1,0 +1,81 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.app-footer {
+    background-color: white;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+    .app-footer hr {
+        margin-top: 0px;
+    }
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 30px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+
+
+.search-form {
+    margin-top: 40vh;
+    margin-top: calc(50vh - 50px);
+    text-align: center;
+}
+
+
+.result-warning-container {
+    margin-top: 35vh;
+    margin-top: calc(50vh - 150px);
+    text-align: center;
+}
+
+
+
+/*--------------------SEARCH RESULT CSS----------------------*/
+.new-search-link {
+    padding-top: 10px;
+}
+
+
+.user-container {
+    display: flex;
+    border: 1px solid #f1f1f1;
+}
+
+.left-section {
+    float: left;
+    margin: 5px;
+}
+
+.right-section {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 10px;
+    align: center;
+}
+
+.title-text {
+    font-size: 18px;
+}
+
+.sub-title {
+    font-size: 16px;
+}
+
+.repo-container span {
+    margin-right: 15px;
+}
